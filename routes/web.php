@@ -151,6 +151,8 @@ Route::resource('/admin/gallery', AdminGalleryController::class);
 
 Route::get('/admin/pengumuman/slug', [AdminAnnouncementController::class, 'slug']);
 Route::resource('/admin/pengumuman', AdminAnnouncementController::class);
+Route::post('/admin/pengumuman/upload-image', [AdminAnnouncementController::class, 'imageBody'])->name('upload.image');
+Route::post('/admin/pengumuman/delete-image', [AdminAnnouncementController::class, 'deleteImage'])->name('delete.image');
 
 Route::get('/admin/apbdes', [AdminAnggaranController::class, 'slug']);
 Route::resource('/admin/apbdes', AdminAnggaranController::class);

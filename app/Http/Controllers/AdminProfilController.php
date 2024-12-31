@@ -31,14 +31,11 @@ class AdminProfilController extends Controller
             'email.email'    => 'Gunakan email yang sah !'
         ]);
 
-        if($request->hasFile('foto')){
-            if($user->foto){
-                unlink('.' .Storage::url($user->foto));
-            }
+        if ($request->hasFile('foto')) {
             $path       = 'img-profil/';
             $file       = $request->file('foto');
-            $extension  = $file->getClientOriginalExtension(); 
-            $fileName   = uniqid() . '.' . $extension; 
+            $extension  = $file->getClientOriginalExtension();
+            $fileName   = uniqid() . '.' . $extension;
             $foto       = $file->storeAs($path, $fileName, 'public');
         } else {
             $validator = Validator::make($request->all(), [
@@ -65,7 +62,7 @@ class AdminProfilController extends Controller
         return redirect('/admin/profil')->with('success', 'Berhasil memperbarui profil');
     }
 
- 
+
     public function changePassword(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -91,13 +88,11 @@ class AdminProfilController extends Controller
             User::whereId(auth()->user()->id)->update([
                 'password' => Hash::make($request->passwordNew)
             ]);
-            
+
             Auth::logout();
 
-            return redirect()->route('login') 
+            return redirect()->route('login')
                 ->with('password-success', 'Berhasil Memperbarui Password. Silakan masuk kembali dengan password baru.');
         }
     }
-
-    
 }

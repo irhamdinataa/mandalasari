@@ -43,7 +43,7 @@
                                             <td>{{ $anggaran->judul }}</td>
                                             <td>{!! $anggaran->keterangan !!}</td>
                                             <td>
-                                                <a href="/apbdes/{{ $anggaran->slug }}" type="button" target="_blank"
+                                                <a href="/apbdesa/{{ $anggaran->slug }}" type="button" target="_blank"
                                                     class="btn btn-success mb-1"><i class="ti ti-eye-check"></i></a>
                                                 <a href="/admin/apbdes/{{ $anggaran->id }}/edit" type="button"
                                                     class="btn btn-warning mb-1"><i class="ti ti-edit"></i></a>

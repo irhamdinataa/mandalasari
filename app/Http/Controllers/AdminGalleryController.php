@@ -17,7 +17,7 @@ class AdminGalleryController extends Controller
     public function index()
     {
         return view('admin.gallery.index', [
-            'gallerys'  => Gallery::all()
+            'gallerys'  => Gallery::orderBy('id', 'DESC')->get()
         ]);
     }
 
@@ -58,7 +58,7 @@ class AdminGalleryController extends Controller
         }
 
         Gallery::create([
-            'gambar'       => $gambar,
+            'gambar'       => $path . $fileName,
             'keterangan'   => $request->keterangan,
             'user_id'      => auth()->user()->id,
         ]);

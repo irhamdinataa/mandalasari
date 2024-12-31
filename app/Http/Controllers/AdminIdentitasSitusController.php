@@ -33,14 +33,11 @@ class AdminIdentitasSitusController extends Controller
             'kode_pos'      => 'Wajib menambahkan kode pos !'
         ]);
 
-        if($request->hasFile('logo')){
-            if($situs->logo){
-                unlink('.' .Storage::url($situs->logo));
-            }
+        if ($request->hasFile('logo')) {
             $path       = 'img-logo/';
             $file       = $request->file('logo');
-            $extension  = $file->getClientOriginalExtension(); 
-            $fileName   = uniqid() . '.' . $extension; 
+            $extension  = $file->getClientOriginalExtension();
+            $fileName   = uniqid() . '.' . $extension;
             $logo       = $file->storeAs($path, $fileName, 'public');
         } else {
             $validator = Validator::make($request->all(), [

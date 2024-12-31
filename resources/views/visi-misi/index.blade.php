@@ -16,7 +16,7 @@
                     </div>
                     <div class="misi mb-3">
                         <h4>Misi</h4>
-                        <p>{!! $visiMisi->misi !!}</p>
+                        <p>{!! nl2br(e($visiMisi->misi)) !!}</p>
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@
     <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
             <a href="/" class="text-nowrap logo-img my-2">
-                <img src="{{ asset('storage/' . $logo->logo) }}" alt="Logo" width="200">
+                <img src="{{ asset('storage/' . $logo->logo) }}" alt="Logo" height="75">
             </a>
             <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
                 <i class="ti ti-x fs-8"></i>
@@ -38,14 +38,14 @@
                         <span class="hide-menu">Slider</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
+                {{-- <li class="sidebar-item">
                     <a class="sidebar-link" href="/admin/video-profile " aria-expanded="false">
                         <span>
                             <i class="ti ti-brand-youtube"></i>
                         </span>
                         <span class="hide-menu">Video Profile</span>
                     </a>
-                </li>
+                </li> --}}
 
 
                 <li class="nav-small-cap">

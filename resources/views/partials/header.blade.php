@@ -2,11 +2,18 @@
 <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
-        <div class="logo me-auto">
-            <h1><a href="/">
-                    <img src="{{ asset('storage/' . $logo->logo) }}" alt="Logo">
-                </a></h1>
+    <div class="logo me-auto row align-items-center p-2">
+        <div class="col-auto me-auto">
+            <a href="/">
+                <img src="{{ asset('storage/' . $logo->logo) }}" alt="Logo" class="img-fluid" style="max-width: 40px; height: auto;" />
+            </a>
         </div>
+        <div class="col text-right">
+            <h6 class="mb-0">Desa Mandala Sari</h6>
+            <small>Kec. Sragi Kab. Lampung Selatan</small>
+        </div>
+    </div>
+
 
         <nav id="navbar" class="navbar">
             <ul>
@@ -31,10 +38,10 @@
                 </li>
                 <li><a class="nav-link scrollto" href="/umkm">Umkm</a></li>
                 <li><a class="nav-link scrollto" href="/layanan">Layanan</a></li>
-                <li><a class="nav-link scrollto" href="/kontak">Kontak kami</a></li>
-                <li>
+                <li><a class="nav-link scrollto" href="/kontak">Kontak Desa</a></li>
+                {{-- <li>
                     <a href="/login" class="nav-link scrollto">Masuk</a>
-                </li>
+                </li> --}}
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->

@@ -6,7 +6,7 @@
             <div class="container" data-aos="fade-up">
       
               <div class="section-title">
-                <h2>Kontak Kami</h2>
+                <h2>Kontak Desa</h2>
               </div>
       
               <div class="row">
@@ -24,7 +24,7 @@
                   <div class="info-box" style="height: 250px;"> <!-- Ubah tinggi sesuai kebutuhan -->
                     <div class="mx-auto pt-4">
                       <i class="bx bx-envelope"></i>
-                      <h3>Email Kami</h3>
+                      <h3>Email</h3>
                       <p>{{ $kontak->email }}</p>
                     </div>
                   </div>
@@ -32,7 +32,7 @@
                   <div class="info-box" style="height: 250px;"> <!-- Ubah tinggi sesuai kebutuhan -->
                     <div class="mx-auto pt-4">
                       <i class="bx bx-phone-call"></i>
-                      <h3>Nomor HP Kami</h3>
+                      <h3>Nomor HP</h3>
                       <p>{{ $kontak->no_hp }}</p>
                     </div>
                   </div>

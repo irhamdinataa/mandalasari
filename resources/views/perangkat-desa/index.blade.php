@@ -5,7 +5,7 @@
     <div class="container">
   
       <div class="section-title">
-        <h2>Perangkat Desa Kragilan</h2>
+        <h2>Perangkat Desa Mandala Sari</h2>
       </div>
   
       <div class="row">

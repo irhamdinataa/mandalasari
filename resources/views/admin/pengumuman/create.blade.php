@@ -78,11 +78,30 @@
         }
     </script>
 
-    <!-- Ck Editor 5 -->
+    <!-- CK Editor -->
     <script>
         let editorInstance;
         ClassicEditor
-            .create(document.querySelector('#editor'))
+            .create(document.querySelector('#editor'), {
+                ckfinder: {
+                    uploadUrl: '{{ route('upload.image') . '?_token=' . csrf_token() }}',
+                    filebrowserUploadMethod: 'form',
+                    onRemoveFile: function(file) {
+                        const imageUrl = file.data.url; // Mengakses data URL gambar
+                        if (imageUrl) {
+                            axios.post('{{ route('delete.image') }}', {
+                                    imageUrl
+                                })
+                                .then(response => {
+                                    console.log('Image deleted from storage.');
+                                })
+                                .catch(error => {
+                                    console.error('Error deleting image from storage:', error);
+                                });
+                        }
+                    }
+                },
+            })
             .then(editor => {
                 editorInstance = editor;
             })

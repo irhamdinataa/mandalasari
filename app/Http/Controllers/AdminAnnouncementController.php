@@ -7,6 +7,7 @@ use Illuminate\Support\Str;
 use App\Models\Announcement;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Cviebrock\EloquentSluggable\Services\SlugService;
 
@@ -131,5 +132,40 @@ class AdminAnnouncementController extends Controller
     {
         $slug = SlugService::createSlug(Berita::class, 'slug', $request->judul);
         return response()->json(['slug' => $slug]);
+    }
+
+    /**
+     * Create method upload image body.
+     */
+    public function imageBody(Request $request)
+    {
+        if ($request->hasFile('upload') && $request->file('upload')->isValid()) {
+            $path = 'img-pengumuman/';
+            $file = $request->file('upload');
+            $extension = $file->getClientOriginalExtension();
+            $fileName = uniqid() . '.' . $extension;
+            $gambar = $file->storeAs($path, $fileName, 'public');
+
+            $url = Storage::url($gambar);
+            return response()->json(['fileName' => $fileName, 'uploaded' => 1, 'url' => $url]);
+        } else {
+            return response()->json(['error' => 'Gagal mengunggah gambar.']);
+        }
+    }
+
+    /**
+     * Create method Delete image body.
+     */
+    public function deleteImage(Request $request)
+    {
+        $fileName = $request->input('fileName');
+
+        try {
+            Storage::disk('public')->delete('img-pengumuman/' . $fileName);
+
+            return response()->json(['deleted' => true]);
+        } catch (\Exception $e) {
+            return response()->json(['error' => 'Gagal menghapus gambar.']);
+        }
     }
 }
