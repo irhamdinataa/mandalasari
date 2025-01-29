@@ -1,13 +1,13 @@
 @extends('layouts.main')
 
 @section('content')
-<section class="counts section-bg">
+<section class="counts section-bg" style="background-color:#fff;">
     <div class="container">
         <div class="section-title">
             <h2>Visi & Misi</h2>
         </div>
   
-        <div class="row">
+        <div class="row" >
             <div class="col-lg-10 mx-auto p-3">
                 <div class="visi-misi">
                     <div class="visi mb-3">

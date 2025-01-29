@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-<section class="counts section-bg">
+<section class="counts section-bg" style="background-color:#fff;">
     <div class="container">
 
       <div class="row my-4">
@@ -190,7 +190,12 @@
           y: {
             beginAtZero: true
           }
-        }
+        },
+        plugins: { 
+  legend: { 
+    display: false, 
+   }, 
+}
       }
     });
   </script>
@@ -213,7 +218,14 @@
                 ],
                 hoverOffset: 4
             }]
-        }
+        },
+      options: {
+        plugins: { 
+  legend: { 
+    display: false, 
+   }, 
+}
+      }
     });
 </script>
 
@@ -239,7 +251,14 @@
                 ],
                 hoverOffset: 4
             }]
-        }
+        },
+      options: {
+        plugins: { 
+  legend: { 
+    display: false, 
+   }, 
+}
+      }
     });
 </script>
 

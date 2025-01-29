@@ -42,19 +42,19 @@
     <div class="row">
       <div class="col-lg-3 col-md-6 icon-box" data-aos="fade-up">
         <div class="icon"><i class="bi bi-bar-chart-line-fill"></i></div>
-        <h4 class="title"><a href="/data-desa">Statistik</a></h4>
+        <h4 class="title"><a href="{{url('/data-desa')}}">Statistik</a></h4>
       </div>
       <div class="col-lg-3 col-md-6 icon-box" data-aos="fade-up">
         <div class="icon"><i class="bi bi-globe-asia-australia"></i></div>
-        <h4 class="title"><a href="/peta-desa">Peta Desa</a></h4>
+        <h4 class="title"><a href="{{url('/peta-desa')}}">Peta Desa</a></h4>
       </div>
       <div class="col-lg-3 col-md-6 icon-box" data-aos="fade-up">
         <div class="icon"><i class="bi bi-shop"></i></div>
-        <h4 class="title"><a href="/umkm">UMKM Desa</a></h4>
+        <h4 class="title"><a href="{{url('/umkm')}}">UMKM Desa</a></h4>
       </div>
       <div class="col-lg-3 col-md-6 icon-box" data-aos="fade-up">
         <div class="icon"><i class="bi bi-telephone-forward"></i></div>
-        <h4 class="title"><a href="/kontak">Pengaduan</a></h4>
+        <h4 class="title"><a href="{{url('/kontak')}}">Pengaduan</a></h4>
       </div>
     </div>
     
@@ -88,7 +88,7 @@
             <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up">
                 <div class="count-box news-card">
                     <div class="card" style="border: 2px solid white; border-radius: 15px; overflow: hidden;"> <!-- Inline style for white border and rounded corners -->
-                        <img src="{{ asset('storage/' . $berita->gambar) }}" alt="Gambar Berita" height="120" class="card-img-top" style="border-top-left-radius: 15px; border-top-right-radius: 15px;"> <!-- Image with rounded corners -->
+                        <img src="{{ asset('storage/' . $berita->gambar) }}" alt="Gambar Berita" height="300" class="card-img-top" style="border-top-left-radius: 15px; border-top-right-radius: 15px;"> <!-- Image with rounded corners -->
                         <div class="card-body">
                             <h5 class="card-title"><b>{{ $berita->judul }}</b></h5>
                             <div class="d-flex justify-content-between align-items-center">

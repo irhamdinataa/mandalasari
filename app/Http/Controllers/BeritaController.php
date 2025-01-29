@@ -12,7 +12,7 @@ class BeritaController extends Controller
     {
         return view('berita.index', [
             'beritas'   => Berita::where('status_id', 2)->with(['user', 'status'])
-                ->orderBy('id', 'DESC')->paginate(9),
+                ->orderBy('id', 'DESC')->paginate(6),
         ]);
     }
 

@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-md-6 mt-5">
                     <a href="/" class="text-nowrap logo-img text-center d-block py-3 w-100">
-                        <img src="admin/assets/images/auth/logo.png" width="220" alt="Logo">
+                        <img src="admin/assets/images/auth/lamsel.png" width="220" alt="Logo">
                     </a>
                 </div>
                 <div class="col-md-6">

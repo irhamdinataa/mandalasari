@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-<section class="counts section-bg">
+<section class="counts section-bg" style="background-color:#fff;">
     <div class="container">
         <div class="section-title">
             <h2>{{ $wilayah->judul }}</h2>

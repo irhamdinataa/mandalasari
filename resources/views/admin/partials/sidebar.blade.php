@@ -190,14 +190,14 @@
                             </a>
                         </li>
 
-                        <li class="sidebar-item">
+                        {{-- <li class="sidebar-item">
                             <a class="sidebar-link" href="/admin/layanan " aria-expanded="false">
                                 <span>
                                     <i class="ti ti-point"></i>
                                 </span>
                                 <span class="hide-menu">Layanan</span>
                             </a>
-                        </li>
+                        </li> --}}
 
                         <li class="sidebar-item">
                             <a class="sidebar-link" href="/admin/gallery " aria-expanded="false">
@@ -208,14 +208,14 @@
                             </a>
                         </li>
 
-                        <li class="sidebar-item">
+                        {{-- <li class="sidebar-item">
                             <a class="sidebar-link" href="/admin/pengumuman " aria-expanded="false">
                                 <span>
                                     <i class="ti ti-point"></i>
                                 </span>
                                 <span class="hide-menu">Pengumuman</span>
                             </a>
-                        </li>
+                        </li> --}}
 
                         <li class="sidebar-item">
                             <a class="sidebar-link" href="/admin/apbdes " aria-expanded="false">

@@ -38,20 +38,20 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Slider::create([
-            'judul'         => 'Website Desa Kragilan',
-            'deskripsi'     => 'Desa Kragilan adalah desa yang terletak di kecamatan Gebang, Kabupaten Purworejo, Provinsi Jawa Tengah, Kode Pos 54191Desa Kragilan adalah desa yang terletak di kecamatan Gebang, Kabupaten Purworejo, Provinsi Jawa Tengah, Kode Pos 54191',
+            'judul'         => 'Website Desa Mandalasari',
+            'deskripsi'     => 'Desa Mandalasari adalah desa yang terletak di Kecamatan Sragi, Kabupaten Lampung Selatan, Provinsi LampungDesa Mandalasari adalah desa yang terletak di Kecamatan Sragi, Kabupaten Lampung Selatan, Provinsi Lampung',
             'link_btn'      => '#',
             'img_slider'    => 'img-slider/slide-1.jpg'
         ]);
         Slider::create([
             'judul'         => 'Sejarah Desa',
-            'deskripsi'     => 'Desa Kragilan adalah desa yang terletak di kecamatan Gebang, Kabupaten Purworejo, Provinsi Jawa Tengah, Kode Pos 54191Desa Kragilan adalah desa yang terletak di kecamatan Gebang, Kabupaten Purworejo, Provinsi Jawa Tengah, Kode Pos 54191',
+            'deskripsi'     => 'Desa Mandalasari adalah desa yang terletak di Kecamatan Sragi, Kabupaten Lampung Selatan, Provinsi LampungDesa Mandalasari adalah desa yang terletak di Kecamatan Sragi, Kabupaten Lampung Selatan, Provinsi Lampung',
             'link_btn'      => '#',
             'img_slider'    => 'img-slider/slide-2.jpg'
         ]);
         Slider::create([
             'judul'         => 'Visi & Misi',
-            'deskripsi'     => 'Visi & Misi desa Kragilana dalah Terwujudnya masyarakat Desa Kragilan yang Bersih, Relegius, Sejahtera, Rapi dan Indah',
+            'deskripsi'     => 'Visi & Misi desa Mandalasaria dalah Terwujudnya masyarakat Desa Mandalasari yang Bersih, Relegius, Sejahtera, Rapi dan Indah',
             'link_btn'      => '#',
             'img_slider'    => 'img-slider/slide-3.jpg'
         ]);
@@ -75,19 +75,19 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Wilayah::create([
-            'judul' => 'Wilayah Desa Kragilan',
-            'body'  => 'Desa Kragilan adalah sebuah desa di kecamatan Gebang, Kabupaten Purworejo, Jawa Tengah, Indonesia. Desa ini terletak di sebelah barat pusat kecamatan Gebang, berjarak sekitar 5 kilometer. Secara geografis, desa Kragilan terletak di dataran tinggi dengan ketinggian sekitar 200 meter di atas permukaan laut. Desa ini berbatasan dengan desa Ngaglik di sebelah utara, desa Gebang di sebelah timur, desa Wadaslintang di sebelah selatan, dan desa Mlaras di sebelah barat. Desa Kragilan memiliki luas wilayah sekitar 3,5 kilometer persegi dengan jumlah penduduk sebanyak 866 jiwa pada tahun 2023. Mayoritas penduduk desa Kragilan bekerja di sektor pertanian, perkebunan, dan peternakan.  Infrastruktur di desa Kragilan cukup memadai, dengan jalan desa yang sudah beraspal dan beberapa fasilitas umum seperti sekolah, rumah sakit, dan pasar.',
+            'judul' => 'Wilayah Desa Mandalasari',
+            'body'  => 'Desa Mandalasari adalah sebuah desa di kecamatan Gebang, Kabupaten Purworejo, Jawa Tengah, Indonesia. Desa ini terletak di sebelah barat pusat kecamatan Gebang, berjarak sekitar 5 kilometer. Secara geografis, desa Mandalasari terletak di dataran tinggi dengan ketinggian sekitar 200 meter di atas permukaan laut. Desa ini berbatasan dengan desa Ngaglik di sebelah utara, desa Gebang di sebelah timur, desa Wadaslintang di sebelah selatan, dan desa Mlaras di sebelah barat. Desa Mandalasari memiliki luas wilayah sekitar 3,5 kilometer persegi dengan jumlah penduduk sebanyak 866 jiwa pada tahun 2023. Mayoritas penduduk desa Mandalasari bekerja di sektor pertanian, perkebunan, dan peternakan.  Infrastruktur di desa Mandalasari cukup memadai, dengan jalan desa yang sudah beraspal dan beberapa fasilitas umum seperti sekolah, rumah sakit, dan pasar.',
             'user_id'   => 1
         ]);
 
         Sejarah::create([
-            'judul' => 'Sejarah Desa Kragilan',
-            'body'  => 'Desa Kragilan adalah sebuah desa di kecamatan Gebang, Kabupaten Purworejo, Jawa Tengah, Indonesia. Desa ini terletak di sebelah barat pusat kecamatan Gebang, berjarak sekitar 5 kilometer. Secara geografis, desa Kragilan terletak di dataran tinggi dengan ketinggian sekitar 200 meter di atas permukaan laut. Desa ini berbatasan dengan desa Ngaglik di sebelah utara, desa Gebang di sebelah timur, desa Wadaslintang di sebelah selatan, dan desa Mlaras di sebelah barat. Desa Kragilan memiliki luas wilayah sekitar 3,5 kilometer persegi dengan jumlah penduduk sebanyak 866 jiwa pada tahun 2023. Mayoritas penduduk desa Kragilan bekerja di sektor pertanian, perkebunan, dan peternakan.  Infrastruktur di desa Kragilan cukup memadai, dengan jalan desa yang sudah beraspal dan beberapa fasilitas umum seperti sekolah, rumah sakit, dan pasar.',
+            'judul' => 'Sejarah Desa Mandalasari',
+            'body'  => 'Desa Mandalasari adalah sebuah desa di kecamatan Gebang, Kabupaten Purworejo, Jawa Tengah, Indonesia. Desa ini terletak di sebelah barat pusat kecamatan Gebang, berjarak sekitar 5 kilometer. Secara geografis, desa Mandalasari terletak di dataran tinggi dengan ketinggian sekitar 200 meter di atas permukaan laut. Desa ini berbatasan dengan desa Ngaglik di sebelah utara, desa Gebang di sebelah timur, desa Wadaslintang di sebelah selatan, dan desa Mlaras di sebelah barat. Desa Mandalasari memiliki luas wilayah sekitar 3,5 kilometer persegi dengan jumlah penduduk sebanyak 866 jiwa pada tahun 2023. Mayoritas penduduk desa Mandalasari bekerja di sektor pertanian, perkebunan, dan peternakan.  Infrastruktur di desa Mandalasari cukup memadai, dengan jalan desa yang sudah beraspal dan beberapa fasilitas umum seperti sekolah, rumah sakit, dan pasar.',
             'user_id'   => 1
         ]);
 
         VisiMisi::create([
-            'visi'      =>  'Terwujudnya Desa Kragilan yang sejahtera, mandiri, dan berbudaya',
+            'visi'      =>  'Terwujudnya Desa Mandalasari yang sejahtera, mandiri, dan berbudaya',
             'misi'      =>  ' - Meningkatkan perekonomian masyarakat melalui pengembangan potensi pertanian, perkebunan, dan pariwisata
                             - Meningkatkan kualitas sumber daya manusia melalui pendidikan dan kesehatan
                             - Meningkatkan kesadaran masyarakat akan pentingnya kelestarian lingkungan',
@@ -182,13 +182,13 @@ class DatabaseSeeder extends Seeder
             'user_id'       => 1
         ]);
         Peta::create([
-            'judul'         => 'Peta Desa Kragilan',
-            'alamat'        => 'Kragilan, Gebang, Purworejo',
+            'judul'         => 'Peta Desa Mandalasari',
+            'alamat'        => 'Mandalasari, Gebang, Purworejo',
             'user_id'       => 1
         ]);
 
         Kontak::create([
-            'lokasi'    => 'Kragilan, Gebang, Purworejo',
+            'lokasi'    => 'Mandalasari, Gebang, Purworejo',
             'email'     => 'purnomodwi174@gmail.com',
             'no_hp'     => '081229248179',
             'user_id'   => 1
@@ -200,8 +200,8 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Situs::create([
-            'logo'      => 'img-logo/DESA KRAGILAN.png',
-            'nm_desa'   => 'Desa Kragilan',
+            'logo'      => 'img-logo/DESA Mandalasari.png',
+            'nm_desa'   => 'Desa Mandalasari',
             'kecamatan' => 'Gebang',
             'kabupaten' => 'Purworejo',
             'provinsi'  => 'Jawa Tengah',
