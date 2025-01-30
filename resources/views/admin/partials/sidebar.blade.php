@@ -2,7 +2,7 @@
     <!-- Sidebar scroll-->
     <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-            <a href="/" class="text-nowrap logo-img my-2">
+            <a href="/" class="text-nowrap logo-img my-3" style="margin-left: 90px">
                 <img src="{{ asset('storage/' . $logo->logo) }}" alt="Logo" height="75">
             </a>
             <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">

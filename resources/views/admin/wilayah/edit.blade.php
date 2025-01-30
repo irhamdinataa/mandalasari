@@ -7,7 +7,7 @@
         <div class="card-header bg-primary">
             <div class="row align-items-center">
                 <div class="col-6">
-                    <h5 class="card-title fw-semibold text-white">Gambar Slider</h5>
+                    <h5 class="card-title fw-semibold text-white">Wilayah Desa</h5>
                 </div>
                 <div class="col-6 text-right">
                     <a href="/wilayah" type="button" class="btn btn-warning float-end" target="_blank">Live Preview</a>
@@ -49,12 +49,33 @@
 <script>
     let editorInstance;
     ClassicEditor
-        .create( document.querySelector( '#editor' ) )
-        .then( editor => {
-             editorInstance =editor;
-        } )
-        .catch( error => {
-            console.error( error );
-        } );
+        .create(document.querySelector('#editor'), {
+            toolbar: {
+                items: [
+                    'heading', '|',
+                    'bold', 'italic', 'underline', 'strikethrough', '|',
+                    'alignment', '|',
+                    'numberedList', '|',
+                    'outdent', 'indent', '|',
+                    'link', '|',
+                    'blockQuote', 'insertTable', 'mediaEmbed', '|',
+                    'undo', 'redo'
+                ]
+            },
+            image: {
+                toolbar: [
+                    'imageStyle:full',
+                    'imageStyle:side',
+                    '|',
+                    'imageTextAlternative'
+                ]
+            }
+        })
+        .then(editor => {
+            editorInstance = editor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
 </script>
 @endsection

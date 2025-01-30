@@ -97,15 +97,37 @@
     </script>
 
     <!-- Ck Editor 5 -->
-    <script>
-        let editorInstance;
-        ClassicEditor
-            .create(document.querySelector('#editor'))
-            .then(editor => {
-                editorInstance = editor;
-            })
-            .catch(error => {
-                console.error(error);
-            });
-    </script>
+<script>
+    let editorInstance;
+    ClassicEditor
+        .create(document.querySelector('#editor'), {
+            toolbar: {
+                items: [
+                    'heading', '|',
+                    'bold', 'italic', 'underline', 'strikethrough', '|',
+                    'alignment', '|',
+                    'numberedList', '|',
+                    'outdent', 'indent', '|',
+                    'link', '|',
+                    'blockQuote', 'insertTable', 'mediaEmbed', '|',
+                    'undo', 'redo'
+                ]
+            },
+            image: {
+                toolbar: [
+                    'imageStyle:full',
+                    'imageStyle:side',
+                    '|',
+                    'imageTextAlternative'
+                ]
+            }
+        })
+        .then(editor => {
+            editorInstance = editor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+</script>
+
 @endsection

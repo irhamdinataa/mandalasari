@@ -55,7 +55,7 @@
                     <div class="card-body">
                         <div class="mb-3">
                             <img src="" class="img-preview img-fluid mb-3 mt-2" id="preview" style="border-radius: 5px; max-height:300px; overflow:hidden;"><br>
-                            <label for="gambar" class="form-label">Gambar Slider <span style="color: red">*</span></label>
+                            <label for="gambar" class="form-label">Gambar Berita <span style="color: red">*</span></label>
                             <input class="form-control" type="file" id="gambar" name="gambar" onchange="previewImage()">
                             @error('gambar')
                                 <div class="text-danger">{{ $message }}</div>
@@ -122,7 +122,7 @@
 </script>
 
 <!-- Ck Editor 5 -->
-<script>
+{{-- <script>
     let editorInstance;
     ClassicEditor
         .create( document.querySelector( '#editor' ) )
@@ -132,6 +132,38 @@
         .catch( error => {
             console.error( error );
         } );
+</script> --}}
+<script>
+    let editorInstance;
+    ClassicEditor
+        .create(document.querySelector('#editor'), {
+            toolbar: {
+                items: [
+                    'heading', '|',
+                    'bold', 'italic', 'underline', 'strikethrough', '|',
+                    'alignment', '|',
+                    'numberedList', '|',
+                    'outdent', 'indent', '|',
+                    'link', '|',
+                    'blockQuote', 'insertTable', 'mediaEmbed', '|',
+                    'undo', 'redo'
+                ]
+            },
+            image: {
+                toolbar: [
+                    'imageStyle:full',
+                    'imageStyle:side',
+                    '|',
+                    'imageTextAlternative'
+                ]
+            }
+        })
+        .then(editor => {
+            editorInstance = editor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
 </script>
 
 @endsection
