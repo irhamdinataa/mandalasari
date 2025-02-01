@@ -9,15 +9,15 @@
                         <div class="col-md-12 mb-5">
                             <div class="card p-3">
                                 <div class="card-body">
-                                    <p><a href="/apbdesa">Anggaran</a> >> <a
-                                            href="{{ $anggaran->slug }}">{{ $anggaran->judul }}</a></p>
+                                    {{-- <p><a href="/apbdesa">Anggaran</a> >> <a
+                                            href="{{ $anggaran->slug }}">{{ $anggaran->judul }}</a></p> --}}
 
                                     <h1 class="mb-3">{{ $anggaran->judul }}</h1>
 
-                                    <div class="news-date mb-4">
+                                    {{-- <div class="news-date mb-4">
                                         <span class="mr-3"><i class="bi bi-person-circle">
                                                 Diposting oleh : {{ $anggaran->user->name }}</i></span>
-                                    </div>
+                                    </div> --}}
 
                                     <img src="{{ asset('storage/' . $anggaran->gambar) }}" alt="Gambar Andalan"
                                         class="img-fluid rounded mb-5" style="height: 450px; width: 100%;">

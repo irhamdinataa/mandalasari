@@ -150,11 +150,11 @@
                         <span class="news-date mr-3">
                             <i class="bi bi-stopwatch-fill"></i> {{ $berita->created_at->diffForHumans() }}
                         </span>
-                        <span class="news-author mr-3">
+                        {{-- <span class="news-author mr-3">
                             <i class="bi bi-person-fill"></i> {{ $berita->user->name }}
-                        </span>
+                        </span> --}}
                         <span class="news-views">
-                            <i class="bi bi-eye-fill"></i> Dibaca {{ $berita->views }} Kali
+                            <i class="bi bi-eye-fill"></i><small>Dibaca {{ $berita->views }} Kali </small> 
                         </span>
                     </div>
                 </div>
